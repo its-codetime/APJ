@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: gold;
+  text-align: center;
+  padding: 1em;
+}
+
+.link {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+}
+
+nav > ul > li {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.5em 0;
+  border: 2px solid rgb(71, 66, 66);
+}
+
+.home_main > .image {
+  width: 80%;
+  margin: 2em auto 1em auto;
+  border: 2px solid white;
+}
+
+.home_quote {
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  line-height: 2em;
+  font-family: "Dancing Script", cursive;
+}
+
+.home_quote_name {
+  text-align: right;
+  color: gold;
+}
+
+.contributions > ul > li {
+  padding: 1em;
+  border: 2px solid rgb(71, 66, 66);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.books > ol > li,
+.books > p {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.quotes > .quotes_images {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.quotes > .quotes_images > img {
+  margin-bottom: 1.5em;
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .home_main {
+    display: flex;
+    padding: 0 2em;
+    /* flex-grow: 1; */
+  }
+
+  .home_quote {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: min(70px, 3.5vw);
+  }
+
+  .contributions > ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin: 0 2em;
+  }
+
+  .contributions > ul > li {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .quotes > .quotes_images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    grid-gap: 2em;
+  }
+
+  .quotes > .quotes_images > img {
+    margin-bottom: 0;
+  }
+}
