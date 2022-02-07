@@ -94,6 +94,12 @@ nav > ul > li {
   html {
     font-size: 1.2rem;
   }
+
+  .home_main {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
   .home_main {
     display: flex;
     padding: 0 2em;
@@ -105,7 +111,7 @@ nav > ul > li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: min(70px, 3.5vw);
+    font-size: min(50px, 3.5vw);
   }
 
   .contributions > ul {
